@@ -16,7 +16,8 @@ namespace JogoDaVelha
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new JogoDaVelha());
+            JogoDaVelha jogo = new JogoDaVelha("", "Fácil");
+            Application.Run(new User(jogo));
         }
     }
 }
